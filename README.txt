@@ -35,7 +35,7 @@ Average Transaction Value = 59.99
 
 Assumptions:
 The input file is well formed and is not missing data.
-
+The order of the command line arguments matter.
 
 Steps:
 1. Make sure that Java 8 or a higher version is installed.
@@ -50,11 +50,12 @@ This executes the program with the command line arguments as inputs, in the foll
 3. To Date
 4. Merchant Name
 
-4. The source code provided in the repository doesn't use command line arguments, instead has variables to give the input values.
-If that is a preferred method, navigate to <LOCAL_COMP>\TransactionAnalyser-master\src\transactionanalyser\TransactionAnalyser.java
-Change the values of the required input parameters in the 'main()' function and run the following commands:
-javac transactionanalyser.TransactionAnalyser.java
+4. The source code provided in the repository has a placeholder comment where the input values of the variables can be changed.
+If that is a preferred method, navigate to <LOCAL_COMP>\TransactionAnalyser-master\src\transactionanalyser\TransactionAnalyser.java, 
+uncomment the placeholder comment and change the values of the input parameters in the 'main()' function.
+
+Navigate to <LOCAL_COMP>\TransactionAnalyser-master\bin and run the following commands:
+javac ..\src\transactionanalyser\TransactionAnalyser.java -d .
 java transactionanalyser.TransactionAnalyser
 
 This should execute the program with the input parameters specified in the main function.
-C:\Users\veena\Downloads\TransactionAnalyser-master.zip\TransactionAnalyser-master\target
